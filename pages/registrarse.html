@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!--indica que todo el documento esta en html5--> 
+<html lang="es">
+    <!--etiqueta de configuraciones del navegador-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--es el titulo de la pagina donde estamos parados-->
+        <title>ANIMEGHOST |Registro</title>
+        <!--libreria de iconos de fontawesome-->
+        <script src="https://kit.fontawesome.com/31f30aea67.js" crossorigin="anonymous"></script>
+        <!--link externo de estilos de css-->
+        <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <script src="../js/script.js"></script>
+        <style>
+            footer{
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body class="Ini-Registro">
+        <header class="header">
+            <a href="#">  
+                <i id="logo" class="fa-regular fa-star">
+                    <span class="star"></span>
+                    <span class="logoText">ANIMEGHOST</span>
+                </i>
+            </a>
+            <nav>
+                <!--lista desordenada ul/ lista ordenada ol-->
+                <ul>
+
+                    <li>
+                        <a href="../index.html#tendencias">Tendencias</a>
+                    </li>
+                    <li>
+                        <a href="registrarse.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="iniciarsesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li>
+                        <a href="api.html">API</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#emision">En Emision</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenedorRegis">
+            <img src="../assets/img/kurumi-sinfondo.png" alt="Registro" class="imagenRegistro">
+            <section id="registro">
+                <h1>Registro</h1>
+                <form action="" method="post" onsubmit="return validarRegistro()">
+                <div>
+                    
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" > 
+                </div>
+                <div>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" >
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
+                <div>
+                    <!-- <label for="nacimiento">Fecha de Nacimiento:</label> -->
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </div>
+            
+                <div>
+                    <label class="terminos" for="termino">Acepta terminos y condiciones</label>
+                    <input type="checkbox" name="termino" id="termino">
+                </div>
+                <div>
+                    <input type="submit" value="Crear cuenta">
+                </div>
+            </form>
+                <a class="ayuda" href="#">Necesitas ayuda?</a>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="">Solicita Anime</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

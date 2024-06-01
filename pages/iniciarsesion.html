@@ -1,0 +1,96 @@
+<!-- esto es un comentario  -->
+<!DOCTYPE html> <!--indica que todo el documento esta en html5--> 
+<html lang="es">
+    <!--etiqueta de configuraciones del navegador-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--es el titulo de la pagina donde estamos parados-->
+        <title>ANIMEGHOST | Inicio sesión</title>
+        <!--el icono que represeta al sitio web y se ve en la pestaña-->
+        <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+        <!--libreria de iconos de fontawesome-->
+        <script src="https://kit.fontawesome.com/31f30aea67.js" crossorigin="anonymous"></script>
+        <!--link externo de estilos de css-->
+        <link rel="stylesheet" href="../css/estilos.css">
+        <!-- vincula archivo js para validar campos formulario -->
+        <script src="../js/script.js"></script>
+
+<style>
+            footer{
+                position: fixed;
+            }
+        </style>        
+    </head>
+    <body class="Ini-Registro">
+        <header class="header">
+            <a href="../index.html">  
+                <i id="logo" class="fa-regular fa-star">
+                    <span class="star"></span>
+                    <span class="logoText">ANIMEGHOST</span>
+                </i>
+            </a>
+            <nav>
+                <!--lista desordenada ul/ lista ordenada ol-->
+                <ul>
+
+                    <li>
+                        <a href="../index.html#tendencias">Tendencias</a>
+                    </li>
+                    <li>
+                        <a href="registrarse.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="iniciarsesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li>
+                        <a href="api.html">API</a>
+                    </li>
+                    <li>
+                        <a href="../index.html#emision">En Emision</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contenedorRegis">
+            <img src="../assets/img/kurumi-sinfondo.png" alt="Registro" class="imagenRegistro">
+            <section id="registro">
+            <h1>Iniciar Sesión</h1>
+            <form action="" method="post" id="formularioInicioSesion">
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <!-- mensaje de error para el campo de correo electronico -->
+                    <span id="email-error" class="error"></span>
+                </div>
+                <div>
+                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                    <!-- Mensaje de error para el campo de contraseña -->
+                    <span id="password-error" class="error"></span>
+                </div>
+                <div>
+                    <input type="submit" value="Iniciar sesión">
+                </div>
+                <div>
+                    <a class="botRegistrarse" href="registrarse.html">Registrarse</a>
+                </div>
+            </form>
+        </section>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    <a href="">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="">Solicita Anime</a>
+                </li>
+                <li>
+                    <a href="">Contacto</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

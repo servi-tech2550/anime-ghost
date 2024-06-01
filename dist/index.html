@@ -1,0 +1,146 @@
+<!-- esto es un comentario  -->
+<!DOCTYPE html> <!--indica que todo el documento esta en html5--> 
+<html lang="es">
+    <!--etiqueta de configuraciones del navegador-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--es el titulo de la pagina donde estamos parados-->
+        <title>CANIMEX | Catalogo de anime</title>
+        <!--el icono que represeta al sitio web y se ve en la pestaña-->
+        <link rel="shortcut icon" href="./assets/img/moon.png" type="image/x-icon">
+        <!--link externo de estilos de css-->
+        <script src="https://kit.fontawesome.com/31f30aea67.js" crossorigin="anonymous"></script>
+        <script src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/estilos_final.css">
+        <style>
+        /*comentario de css- sintaxis de css*/
+        </style>
+        
+        
+
+    </head>
+    <body >
+        <header class="header">
+            <a href="#">  
+                <i id="logo" class="fa-solid fa-moon">
+                    <span class="moon"></span>
+                    <span class="logoText">Canimex</span>
+                </i>
+            </a>
+            <nav>
+                <!--lista desordenada ul/ lista ordenada ol-->
+                <ul>
+
+                    <li>
+                        <a href="#tendencias">Tendencias</a>
+                    </li>
+                    <li>
+                        <a href="./pages/registrarse.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="./pages/iniciosesion.html">Iniciar Sesión</a>
+                    </li>
+                    <li>
+                        <a href="./pages/api.html">API</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="bgImg">
+                <h1>Gran variedad de Animes en un solo lugar</h1>
+                <h3>Disfruta desde donde estés.
+                </h3>
+                <h3>   Cancela cuando quieras.</h3>
+                <a class="botonRegis" href="./pages/registrarse.html">Registrate</a>
+            </section>
+            <section class="buscador">
+                <h2>¿Qué estas buscando para ver?</h2>
+                <form action="">
+                    <input type="text" placeholder="Buscar...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <hr>
+            <section id="tendencias" class="tendencias">
+                <h2>Las tendencias de hoy</h2>
+                <div class="contenedorImagenes">
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/mashle.jpg" alt="mashle" width="250px" height="150px">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/shangri-la.jpg" alt="shangri">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/one_piece.jpg" alt="onepiece">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/myheroacademy.jpg" alt="heroacademy">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/solo_levelling.jpg" alt="sololevelling">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/bluelock.jpg" alt="bluelock">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/mushoku.jpg" alt="mushoku">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/chainsaw.jpg" alt="chaisaw">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/freiren.jpg" alt="freiren">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/classroom.jpg" alt="classroom">
+                    </a>
+                </div>
+                <div class="containerButton">
+                    <button class="nextPrev">Anterior</button>
+                    <button class="nextPrev">Siguiente</button>
+                </div>
+            </section>
+            <hr>
+            <section class="aclamadas">
+                <h2>Las más aclamadas</h2>
+                <div class="contenedorImagenes">
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/demon_slayer.jpg" alt="demonslayer" width="250px" height="150px">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/jujutsu_kaisen.jpg" alt="jujutsukaisen" width="250px" height="150px">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/saint_seiya.jpg" alt="onepiece" width="250px" height="150px">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/dbz.jpg" alt="dbz" width="250px" height="150px">
+                    </a>
+                    <a href="./pages/detalle.html">
+                        <img src="./assets/img/naruto.jpg" alt="naruto" width="250px" height="150px">
+                </a>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="">Terminos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="">Ayuda</a>
+                </li>
+                <li>
+                    <a href="">Administrador</a>
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
+</html>

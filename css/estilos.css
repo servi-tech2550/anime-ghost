@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@font-face {
+    font-family: "DM sans";
+    src: url("../assets/fonts/DM_Sans/DMSans-Italic-VariableFont_opsz\,wght.ttf")
+}
+*{
+    /*reseteo de valores*/
+    margin: 0;
+    padding: 0;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    /* font-size: 40px; */
+    /* pixel es un valor absoluto(no cambia) */
+}
+
+/* estilos del body */
+body{
+    background-color: #3b484e;
+    color: white;
+}
+/* estilos del header */
+.header{
+    background-color: #12525390;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+}
+
+.headerRegis #logoR{
+    margin-top: 0px;
+    color: rgba(218, 115, 5, 0.934);;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 150px; */
+    /* margin-left: 60px; */
+}
+.terminos{
+    font-size: 1rem;
+    padding: none;
+}
+
+#logo:hover{
+    color: white;
+}
+#logoR:hover{
+    color: white;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    color: rgb(236, 231, 67);
+    font-size: 1.5rem;
+}
+hr{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+    border: solid 1px rgb(236, 231, 67);
+}
+.header a{
+    text-decoration: none;
+}
+.star{
+    margin-right: 3px; /* Espacio entre la estrella y el texto */
+}
+
+.logoText{
+    vertical-align: middle;
+}
+nav a{
+    margin-left: 20px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fafafa; 
+    font-weight: bold; 
+}
+
+/* Agregar sombra al pasar el mouse */
+nav a:hover {
+    color: rgba(172, 50, 16, 0.934);/* Cambiar el color de fondo al pasar el mouse */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agregar una sombra al pasar el mouse */
+    transform: scale(1.1); /* aumenta el tamaño al pasar el mouse */
+}
+
+nav ul{
+    justify-content: center;
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: flex-end;  */
+    align-items: center;  /* actua en el eje contrario al contenedor */
+    list-style-type:none;
+    padding: 0;
+    column-gap: 15px;
+}
+
+.inicio-Img .botonRegis:hover{
+    background-color: rgba(172, 50, 16, 0.934); /*cuando pasa el mouse cambia de color*/
+    transform: scale(1.1); /* aumenta el tamaño al pasar el mouse */
+}
+.inicio-Img .botonRegis{
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* negrita */
+    background-color: rgb(15, 76, 78); 
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: background-color 0.3s; 
+    color: #fafafa;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 200px;
+    font-size: 1rem;
+}
+
+
+.contenedorRegis form input[type="submit"]:hover{
+    background-color:rgba(172, 50, 16, 0.934); /*cuando pasa el mouse cambia de color*/
+    transform: scale(1.1); /* Hacer que el enlace crezca al pasar el mouse */
+}
+.contenedorRegis form input[type="submit"] {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-weight: bold; /* negrita */
+    background-color: rgb(15, 76, 78);; 
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: background-color 0.3s;
+    color: #fafafa;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.inicio-Img{
+    background: linear-gradient(to bottom, #000000ad, #000000ad), url(../assets/img/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    line-height: 1.5;
+    text-align: center;
+    padding-top: 150px;
+    /* height: 600px; absolutas */
+    height: 80vh;
+    overflow: hidden; /*todo el contenido que se desborde se oculta*/ 
+    /* unidad relativa 1% viewport = 1vh */
+}
+.inicio-Img h1{
+    font-weight: bold;
+    padding: 10px;
+}
+.inicio-Img h3{
+    padding: 15px;
+}
+.Img-Detal{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgdetal{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.Img-Detal > * {
+    margin-bottom: 20px; /*agrega margen inferior a los elementos hijos*/
+}
+.buscador {
+    text-align: center; /* Centrar el contenido del buscador */
+    margin-bottom: 50px;
+}
+.buscador h2{
+    padding: 30px;
+    margin-top: 50px;
+}
+.buscador form input[type="text"],
+.buscador form input[type="submit"] {
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+}
+
+.buscador form input[type="submit"] {
+    background-color: rgb(10, 57, 77);
+    color: white; 
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: background-color 0.3s; 
+    border: 2px solid white;
+}
+
+.buscador form input[type="submit"]:hover {
+    background-color: rgba(172, 50, 16, 0.934);
+    transform: scale(1.1); /* Hacer que el enlace crezca al pasar el mouse */
+}
+
+.containerButton{
+    text-align: center;
+    margin: 50px;
+}
+
+.nextPrev{
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+    border: 1px solid white;
+    background-color: rgb(10, 57, 77); 
+    color: white; 
+    cursor: pointer; /* Cursor de tipo puntero */
+    transition: background-color 0.3s; 
+}
+
+.nextPrev:hover{
+    background-color: rgba(172, 50, 16, 0.934);
+    transform: scale(1.1); /* Hacer que el enlace crezca al pasar el mouse */
+}
+
+.tendencias{
+    text-align: center;
+}
+
+.aclamadas{
+    text-align: center;
+}
+
+.contenedorImagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedorImagenes a{
+    margin: 10px;
+    flex: 1 0 200px; /* Tamaño inicial de las imágenes */
+    max-width: 250px; /* Ancho máximo de las imágenes */
+}
+
+.contenedorImagenes img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.contenedorParrafos{
+    background-color: #d3cccc;
+}
+.contenedorParrafos > p{
+    font-size: 1.2rem;
+    color: rgb(23, 22, 22);
+    text-align: justify;
+    line-height: 1.5;
+}
+/* Agrega transiciones suaves a las imágenes */
+.contenedorImagenes img {
+    width: 100%;
+    height:100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Agrega transiciones para el transform y el filtro */
+}
+
+/* Define el efecto de transformación y desenfoque al pasar el mouse sobre las imágenes */
+.contenedorImagenes img:hover {
+    transform: scale(1.1); /* Agrandar la imagen al 110% de su tamaño original */
+    filter: grayscale(100%); /* Aplicar un tono blanco y negro a las imágenes*/
+}
+
+.error{
+    color: red;
+    font-size: 1rem;
+}
+
+
+
+.ayuda {
+    padding: 5px; /* Espaciado interno del footer de registro */
+    text-align: center; /* Alineación del texto al centro */
+    font-size: 1rem;
+    background-color: none;
+    text-decoration: none;
+    color: #fafafa;
+    padding-top: 10px
+}
+
+.botRegistrarse{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(236, 231, 67);;
+}
+.botRegistrarse:hover{
+    color: white;
+}
+
+#registro {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-right: 600px;
+    padding: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#registro h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#registro input[type="text"],
+#registro input[type="email"],
+#registro input[type="password"],
+#registro input[type="date"],
+#registro select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+/* imagen de fondo de la pag registro */
+.Ini-Registro{
+    background: linear-gradient(to bottom, #000000ad, #000000ad), url(../assets/img/registro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  
+
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+.contenedorRegis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenRegistro{
+    max-width: 250px;
+    height: 100%;
+    display: block;
+    margin-left: 400px;
+    
+}
+
+/*Estilos de video*/
+
+.cotainer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.video{
+    text-align: center;
+}
+
+.video iframe{
+
+    width: 600px; /* Ajustar el ancho del iframe al 100% del contenedor */
+    height: 400px; /* Permitir que la altura del iframe se ajuste automáticamente */ 
+}
+.container h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(236, 231, 67);
+    font-size: 2rem;
+}
+.info {
+
+padding: 35px;
+}
+.info h2{
+padding-bottom: 5px;
+margin-left: 15px;
+}
+.info ul li{
+padding: 5px;
+}
+/* texto e imagen para el premio awards pagina detalle */
+.premio{
+    color:rgb(236, 231, 67);
+    
+    align-items: center;
+    justify-content: center;
+}
+/* pagina detalle */
+.puntuacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.puntuacion p{
+    padding: 20px;
+}
+/* pagina detalle */
+
+.puntuacion i{
+    color:rgb(236, 231, 67); 
+}
+#stars{
+    color: white;
+}
+
+/*footer*/
+
+
+footer{
+    background-color: #23252b;
+    padding: 20px;
+    color: #fafafa;
+    
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+footer ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el espaciado interno */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+footer ul li a {
+    margin-left: 20px; /* Espacio entre los enlaces */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fafafa;
+    font-weight: bold; 
+}
+
+footer a{
+    font-size: 15px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; 
+}
